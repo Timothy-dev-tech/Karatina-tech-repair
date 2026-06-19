@@ -175,9 +175,7 @@ nav {
   opacity: 0.85;
 }
 
-/* =========================================
-   SECTIONS (shared)
-   ========================================= */
+/* SECTIONS (shared) */
 main section {
   padding-block: var(--section-spacing);
 }
@@ -219,9 +217,7 @@ main section h2 {
   line-height: 1.6;
 }
 
-/* =========================================
-   WHY CHOOSE US
-   ========================================= */
+/* WHY CHOOSE US */
 .why-us-list {
   display: flex;
   flex-direction: column;
@@ -236,9 +232,7 @@ main section h2 {
   border-left: 2px solid var(--color-accent);
 }
 
-/* =========================================
-   PRICING
-   ========================================= */
+/* PRICING */
 .pricing-list {
   display: flex;
   flex-direction: column;
@@ -268,9 +262,7 @@ main section h2 {
   color: var(--color-accent);
 }
 
-/* =========================================
-   CONTACT
-   ========================================= */
+/* CONTACT */
 #contact p {
   font-size: 1.0625rem;
   color: var(--color-muted);
@@ -294,9 +286,7 @@ main section h2 {
   color: var(--color-text);
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
+/* FOOTER */
 footer {
   padding-block: var(--space-lg);
   border-top: 1px solid var(--color-border);
@@ -325,4 +315,30 @@ footer p {
   border-bottom-color: var(--color-accent);
 }
 
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+  }
+
+  main section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+  }
+}
 
