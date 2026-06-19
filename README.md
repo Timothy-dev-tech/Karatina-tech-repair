@@ -1,6 +1,6 @@
 # Karatina Tech & Repair
 
-🔗 Live Site: *coming soon*
+🔗 Live Site: https://timothy-dev-tech.github.io/Karatina-tech-repair/
 
 A fictional business landing page for a phone and gadget repair shop, built from scratch using semantic HTML and modern CSS.
 
@@ -32,7 +32,8 @@ The project focuses on creating a realistic small-business website while practic
 - Develop a portfolio of frontend projects with varied use cases
 
 ## Preview
-*Screenshot coming soon*
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/94475fb8-5f18-4033-b8b0-62dfdc7dd37d" />
+
 
 ## Powered By
 Built as part of [TimSol Technologies](https://timothy-dev-tech.github.io/timPortfolio/) — Timothy Muthuri's personal frontend development practice and portfolio.
