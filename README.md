@@ -32,6 +32,7 @@ The project focuses on creating a realistic small-business website while practic
 - Develop a portfolio of frontend projects with varied use cases
 
 ## Preview
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f9281c79-bc6e-45e5-bb6b-09cb0aae304d" />
 
 
 ## Powered By
