@@ -181,13 +181,25 @@ main section {
 }
 
 main section h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  padding-left: var(--space-md);
-  border-left: 3px solid var(--color-accent);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  letter-spacing: -0.01em;
+  position: relative;
+  display: inline-block;
 }
 
+main section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  border-radius: 2px;
+}
+  
 /* SERVICE */
 .services-grid {
   display: grid;
@@ -197,39 +209,89 @@ main section h2 {
 
 .service-card {
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: 1.25rem;
   padding: var(--space-lg);
-  transition: border-color var(--transition);
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.05) 0%, rgba(124, 92, 252, 0.02) 100%);
+  transition: all var(--transition);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease;
+}
+
 .service-card:hover {
   border-color: var(--color-accent);
-  
+  background: linear-gradient(135deg, rgba(124, 92, 252, 0.1) 0%, rgba(124, 92, 252, 0.05) 100%);
+  box-shadow: 0 8px 24px rgba(124, 92, 252, 0.15);
+  transform: translateY(-4px);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
 }
 
 .service-card h3 {
   font-size: 1.125rem;
   margin-bottom: var(--space-xs);
+  color: var(--color-text);
 }
 
 .service-card p {
   font-size: 1rem;
   color: var(--color-muted);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* WHY CHOOSE US */
+#why-us {
+  background: linear-gradient(180deg, rgba(124, 92, 252, 0.08) 0%, rgba(124, 92, 252, 0.03) 100%);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .why-us-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-lg);
   max-width: 640px;
 }
 
 .why-us-list li {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   color: var(--color-text);
-  padding-left: var(--space-md);
-  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-lg);
+  position: relative;
+  line-height: 1.7;
+  transition: transform var(--transition), color var(--transition);
+}
+
+.why-us-list li:hover {
+  transform: translateX(8px);
+  color: var(--color-accent);
+}
+
+.why-us-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* PRICING */
