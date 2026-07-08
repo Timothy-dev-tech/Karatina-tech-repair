@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Karatina Tech &amp; Repair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="page-header">
+    <div class="container">
+      <nav>
+        <span class="logo">Karatina Tech &amp; Repair</span>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+       </ul>
+      </nav>
+      <h1>Contact</h1>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <div class="container contact-layout">
+
+        <div class="contact-info">
+          <p>
+            Got a device that's acting up? Drop us a line with the issue 
+            and we'll get back to you with next steps.
+          </p>
+          <p> <img src="img/location1.png" alt="Karatina, Kenya" />Karatina, Kenya </p>
+          <p> <img src="img/call.jpg" alt="Phone Number" /> <a href="tel:+254757726455">+254 757 726 455</a></p>
+          <p> <img src="img/email.png" alt="Email" /> ✉️ <a href="mailto:timothyanamba7@gmail.com">timothyanamba7@gmail.com</a></p>
+          <p> <img src="img/clock.png" alt="Hours" /> 🕒 Mon&ndash;Sat, 9am&ndash;6pm</p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="device">Device &amp; Issue</label>
+            <textarea id="device" name="device" rows="4" required 
+              placeholder="e.g. iPhone 12, cracked screen and won't charge" ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Request Repair</button>
+        </form>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Karatina Tech &amp; Repair. All rights reserved.</p>
+      <p class="powered-by">Powered by <a href="https://timothy-dev-tech.github.io/timPortfolio/" target="_blank" rel="noopener noreferrer">TimSol Technologies</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
